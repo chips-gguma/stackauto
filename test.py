@@ -1,5 +1,6 @@
 import win32com.client
- 
+import requests
+
 # 연결 여부 체크
 objCpCybos = win32com.client.Dispatch("CpUtil.CpCybos")
 bConnect = objCpCybos.IsConnect
@@ -22,7 +23,7 @@ if rqStatus != 0:
 # 현재가 정보 조회
 offer = objStockMst.GetHeaderValue(16)  #매도호가
  
-import requests
+
  
 def post_message(token, channel, text):
     response = requests.post("https://slack.com/api/chat.postMessage",
@@ -31,6 +32,6 @@ def post_message(token, channel, text):
     )
     print(response)
  
-myToken = "xoxb-3007010903154-3009331608644-4VJU1StiqfteoNx9l06XCovD"
+myToken = "xoxb-3007010903154-3009331608644-4RnNEdHpx0Ebfp4S4aQTJFxO"
  
 post_message(myToken,"#stock","삼성전자 현재가 : " + str(offer))
