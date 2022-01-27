@@ -7,6 +7,6 @@ def post_message(token, channel, text):
     )
     print(response)
  
-myToken = "xoxb-3007010903154-3009331608644-FwJCOGmN0HLk9UceeXdMBJrr"
+myToken = "xoxb-3007010903154-3009331608644-4VJU1StiqfteoNx9l06XCovD"
  
-post_message(myToken,"#stock","Hello World!")
+post_message(myToken,"#stock","Hello Mr.Jeong!")
