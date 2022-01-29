@@ -12,4 +12,4 @@ time.sleep(5)
 
 app = application.Application()
 app.start('C:\CREON\STARTER\coStarter.exe /prj:cp /id:gguma84 /pwd:gguma84! /pwdcert:certPa$$word /autostart')
-time.sleep(60)
+time.sleep(100)
